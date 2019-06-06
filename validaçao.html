@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>validação</title>
+
+<script type="text/javascript" src="js/validaçao.js"></script>
+
+</head>
+
+<body>
+ <form action="proc.php" method="post" onSubmit="return ValidaCampo()">
+ 	<div>
+ 		Nome: <input type="text" name="nome" id="nome" value="">
+ 	</div>
+ 	<div>
+ 		Esc. Fruto: <br>
+		<input type="radio" name="fruta"
+		id="fruta" value="maça"> Maça<br>
+       
+        <input type="radio" name="fruta"
+		id="fruta" value="banana"> Banana<br>
+		
+		 <input type="radio" name="fruta"
+		id="fruta" value="pera"> Pera<br>
+ 	</div>
+ 	
+ 	<div>
+ 		Ling. se que Interessa: <br>
+		<input type="checkbox" name="rev1"
+		id="rev1" value="php"> PHP<br>
+		
+		<input type="checkbox" name="rev2"
+		id="rev2" value="mysql"> MYSQL<br>
+		
+		<input type="checkbox" name="rev3"
+		id="rev3" value="c#">c#<br>
+	 </div>
+ 	
+ 	<div>
+ 	   <select name="estado" id="estado">
+ 	   	   <option value="selecione">seleciona...</option> 
+ 	   	   
+ 	   	   <option value="SP">SÃO PAULO</option>
+ 	   	   
+ 	   	   <option value="RJ">RIO DE JANEIRO</option>
+ 	   	
+ 	   </select>
+	 </div>
+	 <div>
+	 Deixe sua Mensagem<br>
+
+	 	<textarea id="ms" name="ms"></textarea>	 	
+	 </div>
+	 <div>
+	 	<input type="submit" value="Enviar">
+	 </div>
+ 	
+ </form>
+
+</body>
+</html>
+
